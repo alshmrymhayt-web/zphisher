@@ -22,8 +22,8 @@ if [[ ! $check_container == $CONTAINER ]]; then
 		--network host \
 		--name "${CONTAINER}" \
 		"${IMAGE}"
-fi
+--name "${CONTAINER}" \
 
 docker start --interactive "${CONTAINER}"
 
-# docker run --rm -ti --network="host" -v ${MOUNT_LOCATION}:/zphisher/auth/ --name "$CONTAINER" "$IMAGE"
+# do	--network host \cker run --rm -ti --network="host" -v ${MOUNT_LOCATION}:/zphisher/auth/ --name "$CONTAINER" "$IMAGE"
